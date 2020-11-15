@@ -1,8 +1,9 @@
+// import styled from "styled-wind";
 import styled from "styled-components/macro";
-import tw from "twin.macro";
+import tw from "tailwind.macro";
 
 export const Inner = styled.div`
-  ${({ direction }) => (direction = "row" && tw`flex-row`)};
+  flex-direction: ${({ direction }) => direction};
   ${tw`
     flex
     flex-col
